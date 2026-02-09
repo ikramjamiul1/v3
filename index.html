@@ -2,59 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Website</title>
+  <title>My Gift</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Header / Nav -->
-  <header class="site-header">
-    <div class="container">
-      <div class="logo">YourLogo</div>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Features</a>
-        <a href="#">Pricing</a>
-        <a href="#">Contact</a>
-      </nav>
-    </div>
-  </header>
+<div class="screen active" id="screen-1">
+  <img src="assets/cat.png" class="icon" />
+  <h1>Hello <span>My Love!</span></h1>
+  <p>do you want to see your gift?</p>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>Main headline from video</h1>
-      <p>Short description of what this site does.</p>
-      <button class="primary-btn">Get Started</button>
-    </div>
-  </section>
+  <div class="buttons">
+    <button onclick="goTo(2)">YES PLEASE</button>
+    <button class="outline" onclick="goTo(3)">NO THANKS</button>
+  </div>
+</div>
 
-  <!-- Main Content -->
-  <section class="features">
-    <div class="container grid-3">
-      <div class="card">
-        <h3>Feature One</h3>
-        <p>Description</p>
-      </div>
-      <div class="card">
-        <h3>Feature Two</h3>
-        <p>Description</p>
-      </div>
-      <div class="card">
-        <h3>Feature Three</h3>
-        <p>Description</p>
-      </div>
-    </div>
-  </section>
+<div class="screen" id="screen-2">
+  <h1>These are for you!</h1>
+  <p>I hope you like it, I love you!</p>
+  <button onclick="goTo(4)">NEXT</button>
+</div>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Your Company</p>
-    </div>
-  </footer>
+<div class="screen" id="screen-3">
+  <img src="assets/sad.png" class="icon" />
+  <h1>Promise you'll like it</h1>
+  <button onclick="goTo(2)">TRY AGAIN</button>
+</div>
 
-  <script src="script.js"></script>
+<div class="screen" id="screen-4">
+  <h1>Captured Memories</h1>
+  <div class="gallery">
+    <img src="assets/photo1.jpg" />
+    <img src="assets/photo2.jpg" />
+    <img src="assets/photo1.jpg" />
+    <img src="assets/photo2.jpg" />
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
